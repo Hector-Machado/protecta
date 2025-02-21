@@ -1,0 +1,131 @@
+<!-- Top Bar -->
+<header class="bg-black text-white p-3 text-sm flex justify-between items-center">
+  <div class="ml-20">
+    Fale com quem entende (61) 3274-2000
+  </div>
+  <div class="flex space-x-4 justify-center items-center">
+    <a href="https://www.facebook.com/protecta.ambiental" target="_blank" class="text-white">
+      <img src="<%= asset_path('face.png') %>" alt="Logo Facebook" class="w-6 h-6 object-cover rounded-lg">
+    </a>
+    <a href="https://www.instagram.com/protecta.ambiental/" target="_blank" class="text-white">
+      <img src="<%= asset_path('insta.png') %>" alt="Logo Instagram" class="w-6 h-6 object-cover rounded-lg">
+    </a>
+    <a href="https://www.youtube.com/channel/UCE-6LpM4B0G3_wzHaYAFZ7A" target="_blank" class="text-white">
+      <img src="<%= asset_path('youtube.png') %>" alt="Logo YouTube" class="w-6 h-6 object-cover rounded-lg">
+    </a>
+  </div>
+</header>
+
+<!-- Navbar -->
+<nav class="flex justify-between items-center p-4 bg-white shadow-md">
+  <div class="text-xl font-bold">PROTECTA</div>
+  <div class="flex space-x-6 text-sm">
+    <div>📞 WhatsApp: (61) 98418-2881</div>
+    <div>📍 Endereço: Brasília - DF SCLN 114 Bloco C</div>
+    <div>📧 Email: protectaambiental@gmail.com</div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative bg-gray-800 text-gray-200 text-center p-20 bg-cover h-[500px] flex items-center justify-center" style="background-image: url('<%= asset_path("ddt.webp") %>');">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+
+  <div class="relative z-10">
+    <h1 class="text-3xl font-bold">Higienização de reservatórios, Desinsetização, Sucção, Hidrojateamento, Desinfecção de Ambientes</h1>
+    <p class="mt-4">A Protecta tem a maior equipe certificada para resolver o seu problema.</p>
+    <a href="https://api.whatsapp.com/send/?phone=5561984182881&text=Ol%C3%A1%2C+estou+vendo+no+site+de+voc%C3%AAs+que+voc%C3%AAs+fazem+controle+de+pragas+e+preciso+de+ajuda.+Voc%C3%AA+pode+me+ajudar%3F&type=phone_number&app_absent=0" class="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-full shadow-lg">Clique aqui e converse pelo WhatsApp</a>
+  </div>
+</section>
+
+
+
+<!-- Produtos e Serviços -->
+<section class="py-16 text-center">
+  <h2 class="text-2xl font-bold">Produtos e Serviços</h2>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-8 px-10">
+    <div class="p-6 bg-white shadow-lg text-center rounded-lg">
+      <img src="<%= asset_path('caixadagua.svg') %>" alt="Higienização de Reservatórios" class="w-10 h-10 object-cover my-4 mx-auto rounded-lg">
+      <h3 class="font-semibold">Higienização de Reservatórios</h3>
+      <p class="mt-2 text-sm">Fazemos todo o contato prévio para o cliente se programar.</p>
+      <a href="#" class="text-red-500 mt-4 block">Saiba mais</a>
+    </div>
+    <div class="p-6 bg-white shadow-lg text-center rounded-lg">
+      <img src="<%= asset_path('mascara.svg') %>" alt="Desinsetização" class="w-10 h-10 object-cover my-4 mx-auto rounded-lg">
+      <h3 class="font-semibold">Desinsetização</h3>
+      <p class="mt-2 text-sm">Produto ideal para o combate de pragas.</p>
+      <a href="#" class="text-red-500 mt-4 block">Saiba mais</a>
+    </div>
+    <div class="p-6 bg-white shadow-lg text-center rounded-lg">
+      <img src="<%= asset_path('ca.svg') %>" alt="Sucção / Hidrojateamento" class="w-12 h-10 object-cover my-4 mx-auto rounded-lg">
+      <h3 class="font-semibold">Sucção / Hidrojateamento</h3>
+      <p class="mt-2 text-sm">Equipe capacitada para sanitização de ambientes.</p>
+      <a href="#" class="text-red-500 mt-4 block">Saiba mais</a>
+    </div>
+    <div class="p-6 bg-white shadow-lg text-center rounded-lg">
+      <img src="<%= asset_path('mascara.svg') %>" alt="Desinfecção de Ambientes" class="w-10 h-10 object-cover my-4 mx-auto rounded-lg">
+      <h3 class="font-semibold">Desinfecção de Ambientes</h3>
+      <p class="mt-2 text-sm">Esgotamento dos efluentes residuais.</p>
+      <a href="#" class="text-red-500 mt-4 block">Saiba mais</a>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section class="bg-gray-200 py-16 text-center">
+  <h2 class="text-2xl font-bold">Depoimentos</h2>
+
+  <div class="relative h-64 overflow-hidden mt-8">
+    <div data-controller="hello carousel" data-target="swiper-wrapper" class="swiper-container"
+         data-carousel-options-value='{
+           "pagination": { "el": ".swiper-pagination", "dynamicBullets": true },
+           "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+         }'>
+
+      <!-- Paginação -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Botões de Navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- Slides -->
+      <div class="swiper-wrapper absolute">
+        <div class="swiper-slide">
+          <p class="mt-4 italic">"É uma equipe excelente, ótimo serviço! Parabéns." - Darlane Santos</p>
+        </div>
+        <div class="swiper-slide">
+          <p class="mt-4 italic">"Profissionais incríveis, trabalho bem feito!" - João Silva</p>
+        </div>
+        <div class="swiper-slide">
+          <p class="mt-4 italic">"Amei o atendimento, super indico!" - Maria Oliveira</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contato -->
+<section class="py-16 text-center">
+  <h2 class="text-2xl font-bold">Fale Conosco</h2>
+  <form class="mt-6 space-y-4 max-w-lg mx-auto">
+    <input type="text" placeholder="Nome" class="w-full p-3 border rounded">
+    <input type="email" placeholder="Email" class="w-full p-3 border rounded">
+    <input type="text" placeholder="Endereço" class="w-full p-3 border rounded">
+    <select class="w-full p-3 border rounded">
+      <option>Escolha um serviço</option>
+      <option>Controle de Pragas</option>
+      <option>Controle de Cupins</option>
+      <option>Desentupimento</option>
+      <option>Sanitização</option>
+      <option>Imunização de caixas</option>
+      <option>Repelência a Pombos</option>
+    </select>
+    <button class="bg-red-500 text-white px-6 py-3 rounded">Enviar</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white text-center p-6">
+  <p>Todos os direitos reservados © 2025</p>
+</footer>
